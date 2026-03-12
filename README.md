@@ -5,9 +5,9 @@
 
 Les fonctions de hachage occupent une place centrale dans la cryptographie moderne. Elles sont utilisées dans de nombreux mécanismes de sécurité tels que les signatures numériques, l’intégrité des données, les structures de données sécurisées et les protocoles d’authentification.
 
-Selon **Douglas R. Stinson - Cryptography: Theory and Practice**, une fonction de hachage cryptographique est une fonction déterministe qui transforme un message de longueur arbitraire en une empreinte de longueur fixe.
+Selon Douglas R. Stinson - Cryptography: Theory and Practice, une fonction de hachage cryptographique est une fonction déterministe qui transforme un message de longueur arbitraire en une empreinte de longueur fixe.
 
-Dans ce projet, nous analysons plusieurs fonctions de hachage cryptographiques et non cryptographiques afin d’examiner si des **modèles statistiques ou de machine learning** peuvent identifier des régularités exploitables.
+Dans ce projet, nous analysons plusieurs fonctions de hachage cryptographiques et non cryptographiques afin d’examiner si des modèles statistiques ou de machine learning peuvent identifier des régularités exploitables.
 
 # Définition formelle d’une fonction de hachage
 
@@ -72,7 +72,7 @@ $$
 H(m_1) = H(m_2)
 $$
 
-Pour une fonction produisant $n$ bits, la sécurité théorique est donnée par la **borne du paradoxe des anniversaires** :
+Pour une fonction produisant $n$ bits, la sécurité théorique est donnée par la borne du paradoxe des anniversaires :
 
 $$
 \text{Complexité} \approx 2^{n/2}
@@ -82,7 +82,7 @@ $$
 
 # Avalanche Effect
 
-Une propriété fondamentale des fonctions de hachage cryptographiques est l’**effet d’avalanche**.
+Une propriété fondamentale des fonctions de hachage cryptographiques est l’effet d’avalanche.
 
 Une petite modification du message d’entrée doit produire un changement important dans la sortie.
 
@@ -98,7 +98,7 @@ $$
 H(m') \sim U(\{0,1\}^n)
 $$
 
-c’est-à-dire que la sortie doit se comporter comme une **variable aléatoire uniforme**.
+c’est-à-dire que la sortie doit se comporter comme une variable aléatoire uniforme.
 
 Dans un système idéal :
 
@@ -114,8 +114,8 @@ Ce projet compare plusieurs fonctions de hachage.
 
 ## Fonctions cryptographiques
 
-- **SHA-256**
-- **SHA3-256**
+- SHA-256
+- SHA3-256
 
 Ces fonctions sont conçues pour satisfaire les propriétés de sécurité définies précédemment.
 
