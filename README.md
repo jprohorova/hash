@@ -1,5 +1,4 @@
 # Cryptographie vs Machine Learning  
-### Analyse des fonctions de hachage par apprentissage automatique
 
 ## Introduction
 
